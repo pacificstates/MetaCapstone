@@ -18,7 +18,6 @@ def msg(request):
     secret = {"message":"This view is protected"}
     return JsonResponse(secret)
 
-@api_view()
 @permission_classes([IsAuthenticated])
 @authentication_classes([TokenAuthentication])
 class MenuItemsView(generics.ListCreateAPIView):
@@ -30,7 +29,6 @@ class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
 
-@api_view()
 @permission_classes([IsAuthenticated])
 @authentication_classes([TokenAuthentication])
 class BookingViewSet(viewsets.ModelViewSet):
