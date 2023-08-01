@@ -6,7 +6,8 @@ http://127.0.0.1:8000/auth/users/
 Then, make a post request to the following endpoint using insomnia:
 http://127.0.0.1:8000/restaurant/api-token-auth/
 
-This will provide you with a Token.
+This will provide you with a Token. 
+(alternatively, use the admin panel)
 
 You will then be able to make GET requests to:
 
