@@ -15,8 +15,4 @@ http://127.0.0.1:8000/restaurant/menu --> for a list of menu items
 
 http://127.0.0.1:8000/restaurant/booking/tables --> for a list of booked tables
 
-Static HTML content can be found at:
-
-http://127.0.0.1:8000/restaurant/
-
-The unit tests are located in the app folder (restauarnt) within test_models.py
+Unit tests are located in the app folder (restauarnt) within test_models.py

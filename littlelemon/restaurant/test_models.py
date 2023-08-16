@@ -18,6 +18,7 @@ class MenuViewTest(TestCase):
 
         # Create a test user for authentication
         self.user = User.objects.create_user(username='testuser', password='testpassword')
+        
         # give the test client/user authentication
         self.client = APIClient()
         self.client.force_authenticate(user=self.user)
