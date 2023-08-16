@@ -11,13 +11,6 @@ from rest_framework.authentication import TokenAuthentication
 def index(request):
     return render(request, 'index.html', {})
 
-@api_view()
-@permission_classes([IsAuthenticated])
-@authentication_classes([TokenAuthentication])
-def msg(request):
-    secret = {"message":"This view is protected"}
-    return JsonResponse(secret)
-
 @permission_classes([IsAuthenticated])
 @authentication_classes([TokenAuthentication])
 class MenuItemsView(generics.ListCreateAPIView):
